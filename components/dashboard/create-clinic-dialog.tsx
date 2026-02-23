@@ -680,7 +680,7 @@ export function CreateClinicDialog({
                 </Button>
               </div>
               {services.map((service, index) => (
-                <div key={service.id} className="border rounded-lg p-4 space-y-4 bg-gray-50">
+                <div key={service.id} className="border rounded-lg p-4 space-y-4">
                   {/* Informations de base du service */}
                   <div className="space-y-3">
                     <div className="grid grid-cols-2 gap-3">
