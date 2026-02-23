@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import NeoCareLogo from "@/components/NeoCareLogo";
 import { generateWhatsAppLink } from "@/lib/utils";
 import {
@@ -27,6 +28,7 @@ import {
 const SUPER_ADMIN_PHONE = "+22656636039";
 
 export default function Home() {
+  const router = useRouter();
   const [demoStep, setDemoStep] = useState(0);
   const [typedText, setTypedText] = useState("");
 
@@ -216,14 +218,10 @@ export default function Home() {
               </div>
               <nav className="flex items-center gap-4">
                 <button
-                  onClick={() =>
-                    handleWhatsAppClick(
-                      "Bonjour, je souhaite obtenir plus d'informations sur NeoCare pour ma clinique."
-                    )
-                  }
+                  onClick={() => router.push("/login")}
                   className="text-sm text-dark-400 hover:text-white transition-colors"
                 >
-                  Nous contacter
+                  Connexion
                 </button>
                 <button
                   onClick={() =>
