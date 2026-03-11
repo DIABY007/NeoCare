@@ -75,3 +75,5 @@ Pour vérifier que l'authentification par téléphone est activée :
 - Le téléphone doit être au format **E.164** (ex: `+22656636039`)
 - Le champ `phone_confirmed` doit être `true` pour que l'utilisateur puisse se connecter
 
+
+

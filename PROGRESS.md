@@ -66,3 +66,5 @@
 - Les scripts SQL sont prêts à être exécutés dans Supabase
 - Le projet compile sans erreurs TypeScript
 
+
+

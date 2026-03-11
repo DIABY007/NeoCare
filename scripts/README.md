@@ -54,3 +54,5 @@ Après avoir exécuté les scripts, vous devriez avoir :
 ⚠️ **Important** : Ne partagez jamais vos clés Supabase (Service Role Key) publiquement.
 Ces scripts sont sécurisés et utilisent les politiques RLS pour protéger les données.
 
+
+

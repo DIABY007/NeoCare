@@ -30,3 +30,5 @@ FROM public.users u
 JOIN auth.users au ON u.id = au.id
 WHERE u.role = 'super_admin';
 
+
+

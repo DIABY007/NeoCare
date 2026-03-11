@@ -122,3 +122,5 @@ Si l'utilisateur existe déjà dans `auth.users`, le script :
 4. **Idempotent** : Peut être exécuté plusieurs fois sans problème
 5. **Configuration simple** : Lit automatiquement depuis `.env.local`
 
+
+

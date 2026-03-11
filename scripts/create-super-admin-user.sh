@@ -81,3 +81,5 @@ echo "ON CONFLICT (id) DO UPDATE"
 echo "SET role = 'super_admin', clinic_id = NULL, name = '${NAME}', phone = '${PHONE}';"
 echo ""
 
+
+

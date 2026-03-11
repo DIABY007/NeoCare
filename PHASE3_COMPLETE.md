@@ -124,3 +124,5 @@ La Phase 3 est terminée ! Vous pouvez maintenant :
 - Pour la production, envisager d'utiliser Supabase Auth native ou JWT pour les sessions
 - Le middleware vérifie à la fois les cookies personnalisés et Supabase Auth (compatibilité future)
 
+
+

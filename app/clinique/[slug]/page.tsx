@@ -35,3 +35,5 @@ export default async function ClinicPublicPage({
   return <PublicClinicPage clinic={normalizedClinic} />;
 }
 
+
+

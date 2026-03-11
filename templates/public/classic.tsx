@@ -150,7 +150,7 @@ export function ClassicPublicTemplate({ clinic, onSubmitAppointment }: PublicTem
                     <FormItem>
                       <FormLabel>Nom complet</FormLabel>
                       <FormControl>
-                        <Input placeholder="Jean Dupont" {...field} />
+                        <Input placeholder="Jean Dupont" {...field} className="text-black" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -178,7 +178,7 @@ export function ClassicPublicTemplate({ clinic, onSubmitAppointment }: PublicTem
                               const val = e.target.value.replace(/\D/g, "").slice(0, 8);
                               field.onChange(`+226${val}`);
                             }}
-                            className="flex-1"
+                            className="flex-1 text-black"
                           />
                         </div>
                       </FormControl>
@@ -197,7 +197,7 @@ export function ClassicPublicTemplate({ clinic, onSubmitAppointment }: PublicTem
                     <FormControl>
                       <select
                         {...field}
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background"
+                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background text-black"
                       >
                         <option value="">Sélectionnez un service</option>
                         {clinic.services.map((service) => (
@@ -243,6 +243,7 @@ export function ClassicPublicTemplate({ clinic, onSubmitAppointment }: PublicTem
                               field.onChange(date);
                             }
                           }}
+                          className="text-black"
                         />
                       </FormControl>
                       <FormMessage />
@@ -260,7 +261,7 @@ export function ClassicPublicTemplate({ clinic, onSubmitAppointment }: PublicTem
                         <select
                           {...field}
                           disabled={!selectedService || !selectedDate || loadingTimes}
-                          className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background disabled:opacity-50 disabled:cursor-not-allowed"
+                          className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background disabled:opacity-50 disabled:cursor-not-allowed text-black"
                         >
                           <option value="">
                             {loadingTimes
@@ -296,7 +297,7 @@ export function ClassicPublicTemplate({ clinic, onSubmitAppointment }: PublicTem
                       <textarea
                         {...field}
                         rows={4}
-                        className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background"
+                        className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background text-black"
                         placeholder="Informations supplémentaires..."
                       />
                     </FormControl>
